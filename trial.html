@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Space</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0b0f;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 650px;
+            padding: 40px 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border: 1px solid #8b5cf6;
+            border-radius: 30px;
+            color: #c4b5fd;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 8vw, 76px);
+            margin-bottom: 20px;
+            letter-spacing: -3px;
+        }
+
+        h1 span {
+            color: #a78bfa;
+        }
+
+        p {
+            color: #a1a1aa;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 14px 28px;
+            background: #8b5cf6;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #7c3aed;
+            transform: translateY(-3px);
+        }
+
+        #message {
+            margin-top: 25px;
+            color: #c4b5fd;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="badge">✦ A new dimension</div>
+
+        <h1>Think beyond <span>space.</span></h1>
+
+        <p>
+            Explore new ideas, build incredible things,
+            and turn your imagination into reality.
+            The future starts with one click.
+        </p>
+
+        <button onclick="showMessage()">
+            Explore now →
+        </button>
+
+        <div id="message"></div>
+    </main>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Welcome to the future! 🚀";
+        }
+    </script>
+</body>
+</html>
